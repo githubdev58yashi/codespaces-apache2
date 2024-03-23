@@ -1,7 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {},
-  "postCreateCommand": "sudo sh scripts/postCreateCommand.sh",
+  "postCreateCommand": "sudo sh /workspaces/codespaces-apache2/.devcontainer/scripts/postCreateCommand.sh",
   "ports": [
     {
       "name": "HTTP",
