@@ -2,11 +2,7 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {},
   "postCreateCommand": "sudo sh /workspaces/codespaces-apache2/.devcontainer/scripts/postCreateCommand.sh",
-  "ports": [
-    {
-      "name": "HTTP",
-      "port": 3000,
-      "onOpen": "openBrowser"
-    }
+  "forwardPorts": [
+    3000
   ]
 }
