@@ -6,7 +6,7 @@ sudo sed -i -z 's/<Directory \/var\/www\/>\n\tOptions Indexes FollowSymLinks\n\t
 
 # localhostのみがアクセスできるようにする。
 sudo sed -i 's/Listen 80/Listen 127.0.0.1:3000/' /etc/apache2/ports.conf
-# sudo sed -e '$a ServerName localhost' -i /etc/apache2/apache2.conf
+sudo sh -c "echo 'ServerName localhost' >> /etc/apache2/apache2.conf"
 
 # serviceコマンドじゃないと起動・停止とか出来ない。
 sudo service apache2 start
